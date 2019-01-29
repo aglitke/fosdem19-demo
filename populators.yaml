@@ -1,0 +1,24 @@
+---
+apiVersion: "populator.k8s.io/v1alpha1"
+kind: "Populator"
+metadata:
+  name: "master-populator"
+  namespace: "default"
+spec:
+  type: "git"
+  mountpoint: "git"
+  git:
+    repo: "http://192.168.122.250:30880/alitke/demo.git"
+    branch: "master"
+---
+apiVersion: "populator.k8s.io/v1alpha1"
+kind: "Populator"
+metadata:
+  name: "v1.0-populator"
+  namespace: "default"
+spec:
+  type: "git"
+  mountpoint: "git"
+  git:
+    repo: "http://192.168.122.250:30880/alitke/demo.git"
+    branch: "v1.0"

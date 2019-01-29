@@ -1,0 +1,71 @@
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: hostpath
+provisioner: none
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-01
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /test/01
+  storageClassName: hostpath
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-02
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /test/02
+  storageClassName: hostpath
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-03
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /test/03
+  storageClassName: hostpath
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-04
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /test/04
+  storageClassName: hostpath
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-05
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /test/05
+  storageClassName: hostpath

@@ -1,0 +1,4 @@
+#!/bin/sh
+git init --bare ~/$1 &&
+    cp ~/$1/hooks/post-update.sample ~/$1/hooks/post-update &&
+    logger -p info -t git User `whoami` created a new repo $1
