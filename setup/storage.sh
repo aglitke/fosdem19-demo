@@ -1,6 +1,6 @@
 #!/bin/sh
 
-kubectl='$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh'
+kubectl="$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh"
 PV_DIR=/test
 
 $kubectl delete -f storage.yaml --ignore-not-found=true

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-kubectl='$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh'
+kubectl="$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh"
 
 while true; do
   echo "Waiting for cluster"

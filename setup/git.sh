@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kubectl='$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh'
+kubectl="$HOME/go/src/k8s.io/kubernetes/cluster/kubectl.sh"
 
 $kubectl apply -f gitd.yaml
 sleep 5

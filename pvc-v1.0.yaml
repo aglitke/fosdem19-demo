@@ -6,7 +6,7 @@ metadata:
       foo: bar
 spec:
   dataSource:
-    name: v1.0-populator
+    name: v1-populator
     kind: VolumePopulator
     apiGroup: populator.storage.k8s.io
   accessModes:

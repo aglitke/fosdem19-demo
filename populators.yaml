@@ -14,7 +14,7 @@ spec:
 apiVersion: "populator.k8s.io/v1alpha1"
 kind: "Populator"
 metadata:
-  name: "v1.0-populator"
+  name: "v1-populator"
   namespace: "default"
 spec:
   type: "git"
